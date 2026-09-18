@@ -1,0 +1,24 @@
+*.iml
+.gradle/
+/local.properties
+.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+*.apk
+*.ap_
+*.dex
+
+# Gradle wrapper distribution is downloaded on demand; keep wrapper scripts + jar tracked.
+!gradle-wrapper.jar
+
+# Real Azure AD app-registration values. Never commit tenant-specific secrets.
+# app/msal_config.json.template (checked in) is the placeholder;
+# res/raw/msal_config.json (real values, created locally per SETUP.md) must stay ignored.
+app/src/main/res/raw/msal_config.json
+
+# Build outputs
+app/build/
+build/
